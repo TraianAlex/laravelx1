@@ -3,10 +3,42 @@
 	{
 		"selected_items":
 		[
+			[
+				"article",
+				"articles"
+			],
+			[
+				"Re",
+				"Request"
+			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "app/Http/routes.php",
+			"settings":
+			{
+				"buffer_size": 366,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Http/Controllers/ArticleController.php",
+			"settings":
+			{
+				"buffer_size": 1935,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "resources/views/articles/create.blade.php",
+			"settings":
+			{
+				"buffer_size": 549,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -28,7 +60,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 449.0
+		"width": 593.0
 	},
 	"console":
 	{
@@ -49,10 +81,34 @@
 	},
 	"expanded_folders":
 	[
-		"/home/victor92/Public/laravel/laravelx1"
+		"/home/victor92/Public/laravel/laravelx1",
+		"/home/victor92/Public/laravel/laravelx1/app",
+		"/home/victor92/Public/laravel/laravelx1/app/Http",
+		"/home/victor92/Public/laravel/laravelx1/app/Http/Controllers",
+		"/home/victor92/Public/laravel/laravelx1/database/migrations",
+		"/home/victor92/Public/laravel/laravelx1/resources",
+		"/home/victor92/Public/laravel/laravelx1/resources/views",
+		"/home/victor92/Public/laravel/laravelx1/resources/views/articles"
 	],
 	"file_history":
 	[
+		"/home/victor92/Public/laravel/laravelx1/resources/views/articles/articles.blade.php",
+		"/home/victor92/Public/laravel/laravelx1/resources/views/articles/article.blade.php",
+		"/home/victor92/Public/laravel/laravelx1/app/Article.php",
+		"/home/victor92/Public/laravel/laravelx1/database/migrations/2015_11_23_215739_create_articles_table.php",
+		"/home/victor92/Public/laravel/laravelx1/app/Http/Controllers/HomeController.php",
+		"/home/victor92/Public/laravel/laravelx1/resources/views/user.blade.php",
+		"/home/victor92/Public/laravel/laravelx1/resources/views/home.blade.php",
+		"/home/victor92/Public/laravel/laravelx1/app/Http/routes.php",
+		"/home/victor92/Public/laravel/laravelx1/resources/views/auth/password.blade.php",
+		"/home/victor92/Public/laravel/laravelx1/resources/views/email/password",
+		"/home/victor92/Public/laravel/laravelx1/vendor/laravel/framework/src/Illuminate/Foundation/Auth/ResetsPasswords.php",
+		"/home/victor92/Public/laravel/laravelx1/vendor/laravel/framework/src/Illuminate/Mail/Message.php",
+		"/home/victor92/Public/laravel/laravelx1/vendor/laravel/framework/src/Illuminate/Support/Facades/Password.php",
+		"/home/victor92/Public/laravel/laravelx1/resources/views/auth/login.blade.php",
+		"/home/victor92/Public/laravel/laravelx1/app/Http/Controllers/Auth/AuthController.php",
+		"/home/victor92/Public/laravel/laravelx1/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesUsers.php",
+		"/home/victor92/Public/laravel/laravelx1/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesAndRegistersUsers.php",
 		"/home/victor92/Public/laravel/restfull-api/database/seeds/DatabaseSeeder.php",
 		"/home/victor92/Public/codeIgniter-3.0.3-auth/application/config/database.php",
 		"/home/victor92/Public/codeigniter-auth/application/config/database.php",
@@ -60,7 +116,7 @@
 	],
 	"find":
 	{
-		"height": 0.0
+		"height": 27.0
 	},
 	"find_in_files":
 	{
@@ -74,6 +130,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"email",
+			"name",
+			"$user",
+			"$users",
+			"getReset"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -81,6 +142,10 @@
 		"regex": false,
 		"replace_history":
 		[
+			"body",
+			"title",
+			"$article",
+			"$articles"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -91,18 +156,108 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "app/Http/routes.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 366,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								292,
+								292
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/Http/Controllers/ArticleController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1935,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								299,
+								299
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 228.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "resources/views/articles/create.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 549,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								109,
+								109
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 0.0
+		"height": 27.0
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 35.0
 	},
 	"layout":
 	{
@@ -135,7 +290,7 @@
 	"project": "laravelx1.sublime-project",
 	"replace":
 	{
-		"height": 0.0
+		"height": 50.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -144,6 +299,34 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"contr",
+				"app/Http/Controllers/Controller.php"
+			],
+			[
+				"rou",
+				"app/Http/routes.php"
+			],
+			[
+				"illuminate/mail/message",
+				"vendor/laravel/framework/src/Illuminate/Mail/Message.php"
+			],
+			[
+				"illuminate/support/facades/password",
+				"vendor/laravel/framework/src/Illuminate/Support/Facades/Password.php"
+			],
+			[
+				"resetspasswords",
+				"vendor/laravel/framework/src/Illuminate/Foundation/Auth/ResetsPasswords.php"
+			],
+			[
+				"authenticatesusers",
+				"vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesUsers.php"
+			],
+			[
+				"authenticatesandregistersusers",
+				"vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesAndRegistersUsers.php"
+			]
 		],
 		"width": 0.0
 	},
@@ -169,7 +352,7 @@
 	"settings":
 	{
 	},
-	"show_minimap": true,
+	"show_minimap": false,
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
