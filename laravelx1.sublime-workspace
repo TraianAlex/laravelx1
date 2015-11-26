@@ -4,6 +4,50 @@
 		"selected_items":
 		[
 			[
+				"create",
+				"createArticle〔function〕"
+			],
+			[
+				"with",
+				"withTimestamps〔function〕"
+			],
+			[
+				"belongs",
+				"belongsToMany〔function〕"
+			],
+			[
+				"publi",
+				"public"
+			],
+			[
+				"slide",
+				"slideUp〔function〕"
+			],
+			[
+				"scri",
+				"script	Tag"
+			],
+			[
+				"msg",
+				"msg_important"
+			],
+			[
+				"bs3",
+				"bs3-cdn	bs3-cdn"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"req",
+				"required"
+			],
+			[
+				"time",
+				"timestamps"
+			],
+			[
 				"article",
 				"articles"
 			],
@@ -15,30 +59,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "app/Http/routes.php",
-			"settings":
-			{
-				"buffer_size": 366,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/Http/Controllers/ArticleController.php",
-			"settings":
-			{
-				"buffer_size": 1935,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "resources/views/articles/create.blade.php",
-			"settings":
-			{
-				"buffer_size": 549,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -48,7 +68,7 @@
 	"command_palette":
 	{
 		"height": 390.0,
-		"last_filter": "Package Control: ",
+		"last_filter": "",
 		"selected_items":
 		[
 			[
@@ -60,7 +80,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 593.0
+		"width": 667.0
 	},
 	"console":
 	{
@@ -85,28 +105,55 @@
 		"/home/victor92/Public/laravel/laravelx1/app",
 		"/home/victor92/Public/laravel/laravelx1/app/Http",
 		"/home/victor92/Public/laravel/laravelx1/app/Http/Controllers",
-		"/home/victor92/Public/laravel/laravelx1/database/migrations",
+		"/home/victor92/Public/laravel/laravelx1/app/Providers",
 		"/home/victor92/Public/laravel/laravelx1/resources",
 		"/home/victor92/Public/laravel/laravelx1/resources/views",
-		"/home/victor92/Public/laravel/laravelx1/resources/views/articles"
+		"/home/victor92/Public/laravel/laravelx1/resources/views/articles",
+		"/home/victor92/Public/laravel/laravelx1/resources/views/layouts",
+		"/home/victor92/Public/laravel/laravelx1/vendor"
 	],
 	"file_history":
 	[
-		"/home/victor92/Public/laravel/laravelx1/resources/views/articles/articles.blade.php",
-		"/home/victor92/Public/laravel/laravelx1/resources/views/articles/article.blade.php",
+		"/home/victor92/Dropbox/diverse/setup/tinker",
+		"/home/victor92/Dropbox/diverse/setup/sqlite",
+		"/home/victor92/Public/laravel/laravelx1/app/Http/Controllers/ArticleController.php",
+		"/home/victor92/Public/laravel/laravelx1/resources/views/layouts/main.blade.php",
+		"/home/victor92/Public/laravel/laravelx1/resources/views/articles/form.blade.php",
 		"/home/victor92/Public/laravel/laravelx1/app/Article.php",
+		"/home/victor92/Public/laravel/laravelx1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php",
+		"/home/victor92/Public/laravel/laravelx1/app/Providers/RouteServiceProvider.php",
+		"/home/victor92/Public/laravel/laravelx1/app/Tag.php",
+		"/home/victor92/Public/laravel/laravelx1/resources/views/articles/article.blade.php",
+		"/home/victor92/Public/laravel/laravelx1/database/migrations/2015_11_25_205855_create_tags_table.php",
+		"/home/victor92/Public/laravel/laravelx1/vendor/laracasts/flash/src/views/message.blade.php",
+		"/home/victor92/Public/laravel/laravelx1/config/app.php",
+		"/home/victor92/Public/laravel/laravelx1/resources/views/partials/flash.blade.php",
+		"/home/victor92/Public/laravel/laravelx1/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php",
+		"/home/victor92/Public/laravel/laravelx1/vendor/symfony/console/Helper/HelperInterface.php",
+		"/home/victor92/Public/laravel/laravelx1/vendor/illuminate/html/helpers.php",
+		"/home/victor92/Public/laravel/laravelx1/vendor/symfony/http-foundation/Session/Session.php",
+		"/home/victor92/Public/laravel/laravelx1/gulpfile.js",
+		"/home/victor92/Public/laravel/laravelx1/app/Http/routes.php",
+		"/home/victor92/Public/laravel/laravelx1/resources/views/home.blade.php",
+		"/home/victor92/Public/laravel/laravelx1/app/Http/Kernel.php",
+		"/home/victor92/Public/laravel/laravelx1/app/User.php",
+		"/home/victor92/Public/laravel/laravelx1/app/Http/Controllers/Auth/AuthController.php",
+		"/home/victor92/Public/laravel/laravelx1/resources/views/articles/articles.blade.php",
 		"/home/victor92/Public/laravel/laravelx1/database/migrations/2015_11_23_215739_create_articles_table.php",
+		"/home/victor92/Public/laravel/laravelx1/resources/views/articles/edit.blade.php",
+		"/home/victor92/Public/laravel/laravelx1/resources/views/articles/create.blade.php",
+		"/home/victor92/Public/laravel/laravelx1/resources/views/errors/list.blade.php",
+		"/home/victor92/Public/laravel/laravelx1/app/Http/Requests/ArticleRequest.php",
+		"/home/victor92/Public/laravel/laravelx1/app/Http/Requests/CreateArticleRequest.php",
+		"/home/victor92/Public/laravel/laravelx1/resources/views/layouts/navigation.blade.php",
 		"/home/victor92/Public/laravel/laravelx1/app/Http/Controllers/HomeController.php",
 		"/home/victor92/Public/laravel/laravelx1/resources/views/user.blade.php",
-		"/home/victor92/Public/laravel/laravelx1/resources/views/home.blade.php",
-		"/home/victor92/Public/laravel/laravelx1/app/Http/routes.php",
 		"/home/victor92/Public/laravel/laravelx1/resources/views/auth/password.blade.php",
 		"/home/victor92/Public/laravel/laravelx1/resources/views/email/password",
 		"/home/victor92/Public/laravel/laravelx1/vendor/laravel/framework/src/Illuminate/Foundation/Auth/ResetsPasswords.php",
 		"/home/victor92/Public/laravel/laravelx1/vendor/laravel/framework/src/Illuminate/Mail/Message.php",
 		"/home/victor92/Public/laravel/laravelx1/vendor/laravel/framework/src/Illuminate/Support/Facades/Password.php",
 		"/home/victor92/Public/laravel/laravelx1/resources/views/auth/login.blade.php",
-		"/home/victor92/Public/laravel/laravelx1/app/Http/Controllers/Auth/AuthController.php",
 		"/home/victor92/Public/laravel/laravelx1/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesUsers.php",
 		"/home/victor92/Public/laravel/laravelx1/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesAndRegistersUsers.php",
 		"/home/victor92/Public/laravel/restfull-api/database/seeds/DatabaseSeeder.php",
@@ -116,7 +163,7 @@
 	],
 	"find":
 	{
-		"height": 27.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -130,6 +177,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"Attribute",
 			"email",
 			"name",
 			"$user",
@@ -156,98 +204,8 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "app/Http/routes.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 366,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								292,
-								292
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/Http/Controllers/ArticleController.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1935,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								299,
-								299
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 228.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "resources/views/articles/create.blade.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 549,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								109,
-								109
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -299,6 +257,22 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"model",
+				"vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php"
+			],
+			[
+				"help",
+				"vendor/symfony/console/Helper/HelperInterface.php"
+			],
+			[
+				"helper",
+				"vendor/illuminate/html/helpers.php"
+			],
+			[
+				"session",
+				"vendor/symfony/http-foundation/Session/Session.php"
+			],
 			[
 				"contr",
 				"app/Http/Controllers/Controller.php"

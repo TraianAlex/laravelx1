@@ -1,6 +1,9 @@
 @extends('layouts.main')
 @section('content')
 <div class="content">
-    <div class="title">Laravel 5</div>
+    <div class="title">
+    	<h2>Laravel 5</h2>
+	</div>
+
 </div>
 @endsection

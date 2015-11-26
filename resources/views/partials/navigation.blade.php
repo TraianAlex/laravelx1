@@ -23,6 +23,7 @@
 			<button type="submit" class="btn btn-default">Submit</button>
 		</form>
 		<ul class="nav navbar-nav navbar-right">
+			<li>{!! link_to_action('ArticleController@show', $latest->title, [$latest->id]) !!}</li>
 			@if(Auth::check())
 				<li><a href="{{ url('/auth/logout') }}">Sign out</a></li>
 			@else

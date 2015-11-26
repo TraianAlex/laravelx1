@@ -1,5 +1,9 @@
 <?php
 
+get('tags/{tag}', 'TagsController@show');
+
+get('foo', 'TestController@foo');
+
 $router->controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
@@ -17,3 +21,5 @@ get('/', 'HomeController@index');
 //Route::get() became $router->get() became get()
 //Route::post became router->post became post()
 //Route::resource() became $router->resource() became resource()
+
+//get('about', ['middleware' => 'auth', 'uses' => 'PagesController@about']);

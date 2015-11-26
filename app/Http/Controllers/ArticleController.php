@@ -1,6 +1,4 @@
-<?php
-
-namespace App\Http\Controllers;
+<?php namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
@@ -10,9 +8,17 @@ use App\Http\Controllers\Controller;
 use App\Article;
 use Carbon\Carbon;
 use App\Http\Requests\ArticleRequest;
+use Auth;
 
 class ArticleController extends Controller
 {
+    /**
+     * Create a new article controller instance
+     */
+    public function __construct()
+    {
+        $this->middleware('auth', ['except' => ['index', 'show']]);//['only' => 'create']);
+    }
     /**
      * Display a listing of the resource.
      *
@@ -32,7 +38,8 @@ class ArticleController extends Controller
      */
     public function create()
     {
-        return view('articles.create');
+        $tags = \App\Tag::lists('name', 'id');
+        return view('articles.create', compact('tags'));
     }
 
     /**
@@ -44,8 +51,22 @@ class ArticleController extends Controller
     public function store(ArticleRequest $request)//Request
     {
         //$this->validate($request, ['title' => 'required', 'body' => 'required']);
-        Article::create($request->all());
-        return redirect('article');
+        //Article::create($request->all());
+        //$article = new Article($request->all());//
+        //Auth::user()->articles()->save($article);//
+          //$article = Auth::user()->articles()->create($request->all());
+          //$article->tags()->attach($request->input('tag_list'));
+          //$this->syncTags($article, $request->input('tag_list'));
+          $this->createArticle($request);
+        //session()->flash('msg', 'Your article has been created!');
+        //session()->flash('msg_important', true);
+        //\Flash::success();//::info()//::error()//flash package
+        //flash('Your article has been created!');
+        //flash()->success('Your article has been created!');
+        flash()->overlay('Your article has been created!', 'Good Job');
+        return redirect('article');//->with([
+            //'msg' => 'Your article has been created!',
+            //'msg_important' => true]);
     }
 
     /**
@@ -54,9 +75,9 @@ class ArticleController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Article $article)//$id
     {
-        $article = Article::findOrFail($id);//if(is_null($user)) abort(404);
+        //$article = Article::findOrFail($id);//if(is_null($user)) abort(404);
         //dd($article->published_at);
         //dd($article->created_at->addDays(8)->diffForHumans());//year//month//addDays(8)->format('Y-m')//diffForHumans()
         return view('articles.article', compact('article'));
@@ -68,10 +89,11 @@ class ArticleController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Article $article)//$id
     {
-        $article = Article::findOrFail($id);
-        return view('articles.edit', compact('article'));
+        //$article = Article::findOrFail($id);
+        $tags = \App\Tag::lists('name', 'id');
+        return view('articles.edit', compact('article', 'tags'));
     }
 
     /**
@@ -81,13 +103,14 @@ class ArticleController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(ArticleRequest $request, $id)
+    public function update(ArticleRequest $request, Article $article)//$id
     {
-        $article = Article::findOrFail($id);
+        //$article = Article::findOrFail($id);
         $article->update($request->all());
+        //$article->tags()->sync($request->input('tag_list'));
+        $this->syncTags($article, $request->input('tag_list'));
         return redirect('article');
     }
-
     /**
      * Remove the specified resource from storage.
      *
@@ -97,5 +120,25 @@ class ArticleController extends Controller
     public function destroy($id)
     {
         //
+    }
+    /**
+     * Sync up the list of tags in the database
+     * @param  Article $article
+     * @param  array $tags
+     */
+    private function syncTags(Article $article, $tags)//array
+    {
+        $article->tags()->sync(!$tags ? [] : $tags);
+    }
+    /**
+     * @param  ArticleRequest $request
+     * @return [type]
+     */
+    private function createArticle(ArticleRequest $request)
+    {
+        $article = Auth::user()->articles()->create($request->all());
+        //$article->tags()->attach($request->input('tag_list'));
+        $this->syncTags($article, $request->input('tag_list'));
+        return $article;
     }
 }

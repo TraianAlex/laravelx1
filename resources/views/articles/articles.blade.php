@@ -1,5 +1,6 @@
 @extends('layouts.main')
 @section('content')
+    <h2>Articles</h2>
 	<a href="{{url("article/create")}}" class="btn btn-default">Create an article</a>
 	@if($articles)
     	<ul>
