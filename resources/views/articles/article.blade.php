@@ -8,7 +8,7 @@
 		<h4>Tags:</h4>
 		<ul>
 			@foreach ($article->tags as $tag)
-				<li>{{ $tag->name }}</li>
+				<li><a href="{{url("tags/$tag->name")}}">{{ $tag->name }}</a></li>
 			@endforeach
 		</ul>
 	@endunless
