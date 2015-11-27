@@ -49,7 +49,8 @@ class ArticleController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(ArticleRequest $request)//Request
-    {
+    {    
+        //dd($request->input('tag_list'));
         //$this->validate($request, ['title' => 'required', 'body' => 'required']);
         //Article::create($request->all());
         //$article = new Article($request->all());//
@@ -117,9 +118,12 @@ class ArticleController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Article $article)
     {
-        //
+        $article->tags()->detach();
+        $article->delete();
+        flash('Your article has been deleted!');
+        return redirect('article');
     }
     /**
      * Sync up the list of tags in the database

@@ -1,6 +1,6 @@
 <?php
 
-get('tags/{tag}', 'TagsController@show');
+get('tags/{tags}', 'TagsController@show');
 
 get('foo', 'TestController@foo');
 
