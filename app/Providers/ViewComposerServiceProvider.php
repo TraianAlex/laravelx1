@@ -32,7 +32,7 @@ class ViewComposerServiceProvider extends ServiceProvider
      */
     private function composeNavigation()
     {
-        view()->composer('partials.navigation', 'App\Http\Composers\NavigationComposer');//@compose or handle
+        view()->composer('partials.navigation', 'App\Http\Composers\NavigationComposer');//compose or change manualy @handle
         // view()->composer('partials.navigation', function($view){
         //     $view->with('latest', Article::latest()->first());
         // });

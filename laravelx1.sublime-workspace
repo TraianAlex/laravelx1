@@ -73,14 +73,14 @@
 		[
 			[
 				"Package Control: ",
-				"Package Control: Install Package"
+				"Package Control: List Packages"
 			],
 			[
 				"Package Control: ins",
 				"Package Control: Install Package"
 			]
 		],
-		"width": 449.0
+		"width": 668.0
 	},
 	"console":
 	{
@@ -102,30 +102,32 @@
 	"expanded_folders":
 	[
 		"/home/victor92/Public/laravel/laravelx1",
-		"/home/victor92/Public/laravel/laravelx1/app",
 		"/home/victor92/Public/laravel/laravelx1/app/Http",
 		"/home/victor92/Public/laravel/laravelx1/app/Http/Composers",
 		"/home/victor92/Public/laravel/laravelx1/app/Http/Controllers",
-		"/home/victor92/Public/laravel/laravelx1/app/Providers",
-		"/home/victor92/Public/laravel/laravelx1/resources",
-		"/home/victor92/Public/laravel/laravelx1/resources/views",
-		"/home/victor92/Public/laravel/laravelx1/resources/views/articles",
-		"/home/victor92/Public/laravel/laravelx1/vendor"
+		"/home/victor92/Public/laravel/laravelx1/app/Providers"
 	],
 	"file_history":
 	[
+		"/home/victor92/Public/laravel/laravelx1/database/seeds/DatabaseSeeder.php",
+		"/home/victor92/Public/laravel/laravelx1/database/factories/ModelFactory.php",
+		"/home/victor92/Public/laravel/laravelx1/app/Http/Composers/NavigationComposer.php",
 		"/home/victor92/Public/laravel/laravelx1/app/Http/Controllers/ArticleController.php",
-		"/home/victor92/Public/laravel/laravelx1/app/Http/routes.php",
-		"/home/victor92/Public/laravel/laravelx1/app/Http/Controllers/TagsController.php",
-		"/home/victor92/Public/laravel/laravelx1/app/Providers/RouteServiceProvider.php",
-		"/home/victor92/Public/laravel/laravelx1/resources/views/articles/create.blade.php",
+		"/home/victor92/Public/laravel/laravelx1/app/Http/Controllers/TestController.php",
+		"/home/victor92/Public/laravel/laravelx1/server.php",
+		"/home/victor92/.config/sublime-text-3/Packages/User/Plain text.sublime-settings",
+		"/home/victor92/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
+		"/home/victor92/Public/laravel/laravelx1/app/Providers/ViewComposerServiceProvider.php",
+		"/home/victor92/Public/laravel/laravelx1/resources/views/articles/article.blade.php",
 		"/home/victor92/Public/laravel/laravelx1/resources/views/articles/form.blade.php",
 		"/home/victor92/Public/laravel/laravelx1/app/Article.php",
-		"/home/victor92/Public/laravel/laravelx1/app/Http/Controllers/TestController.php",
+		"/home/victor92/Public/laravel/laravelx1/app/Providers/RouteServiceProvider.php",
+		"/home/victor92/Public/laravel/laravelx1/app/Http/routes.php",
+		"/home/victor92/Public/laravel/laravelx1/app/Tag.php",
+		"/home/victor92/Public/laravel/laravelx1/app/Http/Controllers/TagsController.php",
+		"/home/victor92/Public/laravel/laravelx1/resources/views/articles/create.blade.php",
 		"/home/victor92/Public/laravel/laravelx1/app/Repositories/TestRepository.php",
 		"/home/victor92/Public/laravel/laravelx1/resources/views/layouts/main.blade.php",
-		"/home/victor92/Public/laravel/laravelx1/app/Http/Composers/NavigationComposer.php",
-		"/home/victor92/Public/laravel/laravelx1/app/Providers/ViewComposerServiceProvider.php",
 		"/home/victor92/Public/laravel/laravelx1/config/app.php",
 		"/home/victor92/Public/laravel/laravelx1/app/Providers/AppServiceProvider.php",
 		"/home/victor92/Public/laravel/laravelx1/resources/views/layouts/navigation.blade.php",
@@ -133,8 +135,6 @@
 		"/home/victor92/Dropbox/diverse/setup/tinker",
 		"/home/victor92/Dropbox/diverse/setup/sqlite",
 		"/home/victor92/Public/laravel/laravelx1/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php",
-		"/home/victor92/Public/laravel/laravelx1/app/Tag.php",
-		"/home/victor92/Public/laravel/laravelx1/resources/views/articles/article.blade.php",
 		"/home/victor92/Public/laravel/laravelx1/database/migrations/2015_11_25_205855_create_tags_table.php",
 		"/home/victor92/Public/laravel/laravelx1/vendor/laracasts/flash/src/views/message.blade.php",
 		"/home/victor92/Public/laravel/laravelx1/resources/views/partials/flash.blade.php",
@@ -336,7 +336,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 180.0,
+	"side_bar_width": 179.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
