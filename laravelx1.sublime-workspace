@@ -4,6 +4,38 @@
 		"selected_items":
 		[
 			[
+				"App",
+				"App"
+			],
+			[
+				"Auth",
+				"Auth::user"
+			],
+			[
+				"log",
+				"logout〔function〕"
+			],
+			[
+				"login",
+				"loginUsingId〔function〕"
+			],
+			[
+				"Route",
+				"Route::get"
+			],
+			[
+				"redire",
+				"redirect〔function〕"
+			],
+			[
+				"in",
+				"input"
+			],
+			[
+				"method",
+				"method"
+			],
+			[
 				"create",
 				"createArticle〔function〕"
 			],
@@ -61,14 +93,9 @@
 	[
 	],
 	"build_system": "",
-	"build_system_choices":
-	[
-	],
-	"build_varint": "",
 	"command_palette":
 	{
 		"height": 390.0,
-		"last_filter": "Package Control: ",
 		"selected_items":
 		[
 			[
@@ -84,11 +111,7 @@
 	},
 	"console":
 	{
-		"height": 153.0,
-		"history":
-		[
-			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
-		]
+		"height": 153.0
 	},
 	"distraction_free":
 	{
@@ -99,16 +122,63 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
-	"expanded_folders":
-	[
-		"/home/victor92/Public/laravel/laravelx1",
-		"/home/victor92/Public/laravel/laravelx1/app/Http",
-		"/home/victor92/Public/laravel/laravelx1/app/Http/Composers",
-		"/home/victor92/Public/laravel/laravelx1/app/Http/Controllers",
-		"/home/victor92/Public/laravel/laravelx1/app/Providers"
-	],
 	"file_history":
 	[
+		"/D/Dropbox/www/laravel/laravelx1/app/Providers/AuthServiceProvider.php",
+		"/D/Dropbox/www/laravel/laravelx1/app/Http/Controllers/ArticleController.php",
+		"/D/Dropbox/www/laravel/laravelx1/app/Policies/ArticlePolicy.php",
+		"/D/Dropbox/www/laravel/laravelx1/resources/views/articles/article.blade.php",
+		"/D/Dropbox/www/laravel/laravelx1/app/User.php",
+		"/D/Dropbox/www/laravel/laravelx1/app/Article.php",
+		"/D/Dropbox/www/laravel/laravelx1/database/factories/ModelFactory.php",
+		"/C/Users/victor92/OneDrive/whtml/embassy/index.html",
+		"/D/Dropbox/www/laravel/laravelx1/app/Http/routes.php",
+		"/D/Dropbox/www/laravel/laravelx1/app/Http/Controllers/TestController.php",
+		"/D/Dropbox/www/laravel/laravelx1/app/Events/UserHasRegistered.php",
+		"/D/Dropbox/www/laravel/laravelx1/app/Providers/EventServiceProvider.php",
+		"/D/Dropbox/www/laravel/laravelx1/app/Listeners/SendWelcomeEmail.php",
+		"/D/Dropbox/www/laravel/laravelx1/resources/views/layouts/main.blade.php",
+		"/D/Dropbox/www/laravel/laravelx1/config/broadcasting.php",
+		"/D/Dropbox/www/laravel/laravelx1/.env",
+		"/D/Dropbox/www/laravel/laravelx1/tests/ExampleTest.php",
+		"/D/Dropbox/www/laravel/laravelx1/app/Http/Middleware/MustBeAdmin.php",
+		"/D/Dropbox/www/laravel/laravelx1/app/Http/Kernel.php",
+		"/D/Dropbox/www/laravel/laravelx1/app/Jobs/CalculateTax.php",
+		"/D/Dropbox/www/laravel/laravelx1/app/Console/Kernel.php",
+		"/D/Dropbox/www/laravel/laravelx1/app/Console/Commands/Salut.php",
+		"/D/Dropbox/www/laravel/laravelx1/gulpfile.js",
+		"/D/Dropbox/www/laravel/laravelx1/database/seeds/DatabaseSeeder.php",
+		"/D/Dropbox/www/laravel/laravelx1/resources/views/partials/navigation.blade.php",
+		"/D/Dropbox/www/laravel/laravelx1/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php",
+		"/D/Dropbox/www/laravel/laravelx1/tests/TestCase.php",
+		"/D/Dropbox/www/laravel/laravelx1/vendor/laravel/framework/src/Illuminate/Foundation/Testing/CrawlerTrait.php",
+		"/D/Dropbox/www/laravel/laravelx1/vendor/laravel/framework/src/Illuminate/Foundation/Testing/AssertionsTrait.php",
+		"/D/Dropbox/www/laravel/laravelx1/vendor/laravel/framework/src/Illuminate/Foundation/Testing/ApplicationTrait.php",
+		"/D/Dropbox/www/laravel/laravelx1/resources/views/partials/users.blade.php",
+		"/D/Dropbox/www/laravel/laravelx1/resources/views/home.blade.php",
+		"/D/Dropbox/www/laravel/laravelx1/resources/views/auth/users.blade.php",
+		"/D/Dropbox/www/laravel/laravelx1/composer.json",
+		"/D/Dropbox/www/laravel/laravelx1/app/Http/helpers.php",
+		"/D/Dropbox/www/laravel/laravelx1/app/Http/Requests/CreateSongRequest.php",
+		"/D/Dropbox/www/laravel/laravelx1/resources/views/partials/form_song.blade.php",
+		"/D/Dropbox/www/laravel/laravelx1/resources/views/songs/create.blade.php",
+		"/D/Dropbox/www/laravel/laravelx1/resources/views/songs/edit.blade.php",
+		"/D/Dropbox/www/laravel/laravelx1/resources/views/songs/show.blade.php",
+		"/D/Dropbox/www/laravel/laravelx1/resources/views/songs/index.blade.php",
+		"/D/Dropbox/www/laravel/laravelx1/app/Providers/RouteServiceProvider.php",
+		"/D/Dropbox/www/laravel/laravelx1/app/Http/Controllers/SongsController.php",
+		"/D/Dropbox/www/laravel/laravelx1/vendor/illuminate/html/helpers.php",
+		"/D/Dropbox/www/laravel/laravelx1/app/Providers/ViewComposerServiceProvider.php",
+		"/D/Dropbox/www/laravel/laravelx1/app/Tag.php",
+		"/D/Dropbox/www/laravel/laravelx1/resources/views/articles/create.blade.php",
+		"/D/Dropbox/www/laravel/laravelx1/app/Song.php",
+		"/D/Dropbox/www/laravel/laravelx1/resources/views/articles/edit.blade.php",
+		"/D/Dropbox/www/laravel/laravelx1/database/migrations/2015_11_30_225502_create_songs_table.php",
+		"/D/Dropbox/www/laravel/laravelx1/app/Http/Controllers/HomeController.php",
+		"/D/Dropbox/www/laravel/laravelx1/app/Http/Controllers/TagsController.php",
+		"/D/download/LeadPagesTemplateStarterKit-master/leadpages-template/js/functions.js",
+		"/D/Dropbox/temp/install-package-control",
+		"/D/Dropbox/www/laravel/laravelx1/resources/assets/sass/app.scss",
 		"/home/victor92/Public/laravel/laravelx1/database/seeds/DatabaseSeeder.php",
 		"/home/victor92/Public/laravel/laravelx1/database/factories/ModelFactory.php",
 		"/home/victor92/Public/laravel/laravelx1/app/Http/Composers/NavigationComposer.php",
@@ -183,6 +253,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"show",
+			"Auth",
+			"getAdmin",
 			"Attribute",
 			"email",
 			"name",
@@ -250,8 +323,6 @@
 	{
 		"height": 0.0
 	},
-	"pinned_build_system": "",
-	"project": "laravelx1.sublime-project",
 	"replace":
 	{
 		"height": 56.0
@@ -260,9 +331,12 @@
 	"select_file":
 	{
 		"height": 0.0,
-		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"html/help",
+				"vendor/illuminate/html/helpers.php"
+			],
 			[
 				"model",
 				"vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php"
@@ -313,32 +387,15 @@
 	"select_project":
 	{
 		"height": 0.0,
-		"last_filter": "",
 		"selected_items":
 		[
 		],
 		"width": 0.0
-	},
-	"select_symbol":
-	{
-		"height": 0.0,
-		"last_filter": "",
-		"selected_items":
-		[
-		],
-		"width": 0.0
-	},
-	"selected_group": 0,
-	"settings":
-	{
 	},
 	"show_minimap": false,
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
 	"side_bar_width": 179.0,
-	"status_bar_visible": true,
-	"template_settings":
-	{
-	}
+	"status_bar_visible": true
 }

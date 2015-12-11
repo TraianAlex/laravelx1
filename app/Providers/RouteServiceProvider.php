@@ -36,6 +36,12 @@ class RouteServiceProvider extends ServiceProvider
         {
             return \App\Tag::where('name', $name)->firstOrFail();
         });
+
+        $router->bind('songs', function($slug)
+        {
+            //return App\Song::whereSlug($slug)->first();//App\Song::where('slug', $slug)->first()
+            return \App\Song::where('slug', $slug)->firstOrFail();
+        });
     }
 
     /**

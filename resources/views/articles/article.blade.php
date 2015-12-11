@@ -13,8 +13,10 @@
 		</ul>
 	@endunless
 
-	<a href="{{url("article/$article->id/edit")}}" class="btn btn-default">Edit</a>
-	{!! Form::open(['method' => 'DELETE', 'route' => ['article.destroy', $article->id]]) !!}
-	{!! Form::submit('Delete Article', ['class' => 'btn btn-danger']) !!}
-	{!! Form::close() !!}
+	@can('edit', $article)
+		<a href="{{url("article/$article->id/edit")}}" class="btn btn-default">Edit</a>
+		{!! Form::open(['method' => 'DELETE', 'route' => ['article.destroy', $article->id]]) !!}
+		{!! Form::submit('Delete Article', ['class' => 'btn btn-danger']) !!}
+		{!! Form::close() !!}
+	@endcan
 @endsection

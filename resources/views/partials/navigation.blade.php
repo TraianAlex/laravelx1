@@ -14,18 +14,22 @@
 	<div class="collapse navbar-collapse navbar-ex1-collapse">
 		<ul class="nav navbar-nav">
 			<li class="active"><a href="{{url('article')}}">Articles</a></li>
-			<li><a href="#">Link</a></li>
+			<li><a href="{{url('songs')}}">Songs</a></li>
 		</ul>
-		<form class="navbar-form navbar-left" role="search">
+		<form method="POST" action="{{ url('/search-results') }}" class="navbar-form navbar-left" role="search">
+			<input type="hidden" name="_token" value={{ csrf_token() }}>
 			<div class="form-group">
-				<input type="text" class="form-control" placeholder="Search">
+				<input type="text" id="search" name="search" class="form-control" placeholder="Search">
 			</div>
-			<button type="submit" class="btn btn-default">Submit</button>
+			<button type="submit" class="btn btn-default">Search</button>
 		</form>
 		<ul class="nav navbar-nav navbar-right">
-			<li>{!! link_to_action('ArticleController@show', $latest->title, [$latest->id]) !!}</li>
+			@if($latest)
+				<li>{!! link_to_action('ArticleController@show', $latest->title, [$latest->id]) !!}</li>
+			@endif
 			@if(Auth::check())
 				<li><a href="{{ url('/auth/logout') }}">Sign out</a></li>
+				<li><a href="{{ url('users') }}">Users</a></li>
 			@else
 				<li><a href="{{ url('/auth/login') }}">Sign in</a></li>
 				<li><a href="{{ url('/auth/register') }}">Register</a></li>

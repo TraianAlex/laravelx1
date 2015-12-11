@@ -12,6 +12,10 @@ var elixir = require('laravel-elixir');
  */
 
 elixir(function(mix) {
-	//mix.less('app.less');
-    mix.sass('app.scss');
+    //mix.sass('app.scss');
+    //mix.less(['app.less', 'other.less']);
+    //mix.cofee(['module.cofee', 'moduletwo.cofee']);
+    //mix.scripts(['one.js', 'two.js'], 'public/assets2/all.js');//also chose where
+    //mix.babel(['one.js', 'two.js'], 'public/assets2/all.js');
+    //mix.phpUnit();
 });

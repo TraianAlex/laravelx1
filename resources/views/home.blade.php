@@ -4,6 +4,6 @@
     <div class="title">
     	<h2>Laravel 5</h2>
 	</div>
-
+	@include('partials.users')
 </div>
 @endsection

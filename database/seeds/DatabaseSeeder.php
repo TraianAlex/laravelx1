@@ -2,8 +2,8 @@
 
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
-
 use App\User;
+use App\Article;
 
 class DatabaseSeeder extends Seeder
 {
@@ -15,10 +15,12 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         Model::unguard();
-
         // $this->call(UserTableSeeder::class);
         User::truncate();
-        factory(User::class, 10)->create();
+        Article::truncate();
+
+        //factory(User::class, 10)->create();
+        //factory(Article::class, 10)->create();
 
         Model::reguard();
     }

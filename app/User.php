@@ -45,4 +45,16 @@ class User extends Model implements AuthenticatableContract,
     {
         return $this->hasMany('App\Article');
     }
+
+    public function testInjector()
+    {
+        return $this->get();
+    }
+    /**
+    * used in AuthServiceProvider
+    */
+    public function owns($related)
+    {
+        return $this->id == $related->user_id;
+    }
 }

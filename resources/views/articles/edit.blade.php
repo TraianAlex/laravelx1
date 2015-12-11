@@ -1,7 +1,7 @@
 @extends('layouts.main')
 @section('content')
 	<h2>Edit: {{ $article->title }}</h2>
-	{!! Form::model($article, ['method' => 'PATCH', 'url' => 'article/'.$article->id]) !!}
+	{!! Form::model($article, ['method' => 'PATCH', 'url' => url('article/'.$article->id)]) !!}
 		@include('articles.form', ['submitButtonText' => 'Update Article'])
 	{!! Form::close() !!}
 	@include('errors.list')

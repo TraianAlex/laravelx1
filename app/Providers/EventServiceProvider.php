@@ -16,6 +16,9 @@ class EventServiceProvider extends ServiceProvider
         'App\Events\SomeEvent' => [
             'App\Listeners\EventListener',
         ],
+        'App\Events\UserHasRegistered' => [
+            'App\Listeners\SendWelcomeEmail@welcome',//'App\Listeners\SendWelcomeEmail@welcome' and in class will be a method name welcome instead handle
+        ],
     ];
 
     /**
