@@ -25,7 +25,7 @@
 		</form>
 		<ul class="nav navbar-nav navbar-right">
 			@if($latest)
-				<li>{!! link_to_action('ArticleController@show', $latest->title, [$latest->id]) !!}</li>
+				<li>{!! link_to_action('ArticleController@show', $latest->title, [$latest->id]) !!}</li><!-- use composer class to persist this data // create Providers/ViewComposerServiceProvider class-->
 			@endif
 			@if(Auth::check())
 				<li><a href="{{ url('/auth/logout') }}">Sign out</a></li>

@@ -3,7 +3,10 @@
 get('foo', 'TestController@foo');//repository
 get('users', 'TestController@users');//injection
 get('admin', 'TestController@admin');//check middleware
+
 get('broadcast', 'TestController@broadcast');//event
+//event('App\Events\UserHasRegistered', $user);
+//event(new App\Events\UserHasRegistered);
 
 /*-------------------------------------------------------------------------*/
 
@@ -15,8 +18,8 @@ get('broadcast', 'TestController@broadcast');//event
 resource('songs', 'SongsController', [
 	'names' => ['index' => 'songs_path',
 				 'show' => 'song_path'
-	 ]
-]);//'only' => ['index', 'show'] //'except' => ['create']
+	 ]//,'only' => ['index', 'show'] //'except' => ['create']
+]);
 //we can change the name of songs with music
 // get('songs', ['as' => 'songs_path', 'uses' => 'SongsController@index']);
 // get('songs/{songs}', ['as' => 'song_path', 'uses' => 'SongsController@show']);
@@ -50,9 +53,6 @@ post('search-results', function()
 {
 	return sprintf('Search results for "%s"', Request::input('search'));
 });
-
-//event('App\Events\UserHasRegistered', $user);
-//event(new App\Events\UserHasRegistered);
 
 Route::group(['prefix' => 'admin', 'as' => 'Admin.'], function(){
 	Route::get('xxxx', ['as' => 'xxxx'], function(){

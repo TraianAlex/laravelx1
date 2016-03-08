@@ -13,7 +13,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        // view()->composer('partials.navigation', function($view){
+        //     $view->with('latest', Article::latest()->first());
+        // }); moved in a custom class
     }
 
     /**

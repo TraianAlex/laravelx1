@@ -14,8 +14,8 @@ class AuthServiceProvider extends ServiceProvider
      */
     protected $policies = [
         //'App\Model' => 'App\Policies\ModelPolicy',
-        //App\Article::class => \App\Policies\ArticlePolicy::class//doesn't work
-        'App\Article' => 'App\Policies\ArticlePolicy'
+        \App\Article::class => \App\Policies\ArticlePolicy::class
+        //'App\Article' => 'App\Policies\ArticlePolicy'
     ];
 
     /**
@@ -28,11 +28,11 @@ class AuthServiceProvider extends ServiceProvider
     {
         $this->registerPolicies($gate);
 
-        //$gate->define('edit-article', 'Class@method')
-
         // $gate->define('edit-article', function($user, $article){
         //     //return $user->id == $article->user_id;
         //     return $user->owns($article);
         // });
+
+        //$gate->define('edit-article', 'Class@method')
     }
 }

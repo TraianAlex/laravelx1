@@ -21,10 +21,11 @@ class TestController extends Controller
     */
     public function __construct()
     {
-        $this->middleware('admin:traian', ['only' => 'admin']);
+        $this->middleware('admin:traian', ['only' => 'admin']);//:yearly
     }
 
-    public function foo(TestRepository $repository){
+    public function foo(TestRepository $repository)
+    {
     	return $repository->get();
     }
     /**

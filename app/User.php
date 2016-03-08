@@ -45,13 +45,14 @@ class User extends Model implements AuthenticatableContract,
     {
         return $this->hasMany('App\Article');
     }
-
+    
+    //used in partials/users.blade.php
     public function testInjector()
     {
         return $this->get();
     }
     /**
-    * used in AuthServiceProvider
+    * used in AuthServiceProvider or ArticlePolicy
     */
     public function owns($related)
     {

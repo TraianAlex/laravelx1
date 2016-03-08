@@ -54,10 +54,13 @@ class ArticleController extends Controller
         //dd($request->input('tag_list'));
         //$this->validate($request, ['title' => 'required', 'body' => 'required']);
         //Article::create($request->all());
+
         //$article = new Article($request->all());//
         //Auth::user()->articles()->save($article);//
-          //$article = Auth::user()->articles()->create($request->all());
-          //$article->tags()->attach($request->input('tag_list'));
+
+        //$article = Auth::user()->articles()->create($request->all());//create an article with an auth user
+        //$article->tags()->attach($request->input('tag_list'));//attach the tag id (getTagListAttribute -> tag_list) get from form by model binding
+
           //$this->syncTags($article, $request->input('tag_list'));
           $this->createArticle($request);
         //session()->flash('msg', 'Your article has been created!');
@@ -79,11 +82,19 @@ class ArticleController extends Controller
      */
     public function show(Article $article)//$id
     {
+        //test
+        //auth()->logout();//or change the users id
+        // auth()->loginUsingId(8);//11
+
+        // if(Gate::denies('edit', $article))
+        // {
+        //     abort(403, 'Sorry, not sorry.');
+        // }
+
         //$article = Article::findOrFail($id);//if(is_null($user)) abort(404);
         //dd($article->published_at);
         //dd($article->created_at->addDays(8)->diffForHumans());//year//month//addDays(8)->format('Y-m')//diffForHumans()
-        //auth()->logout();//or change the users id
-        //auth()->loginUsingId(11);//tmp
+        
         return view('articles.article', compact('article'));
     }
 
@@ -95,19 +106,22 @@ class ArticleController extends Controller
      */
     public function edit(Article $article)//$id
     {
-         // if(Gate::denies('edit', $article))//allows //edit-article if use boot
-         // {
-         //     abort(403, 'Sorry, not sorry.');
-         // }
+         if(Gate::denies('edit', $article))//allows //edit-article if use AuthServiceProvider::boot
+         {
+             abort(403, 'Sorry, not sorry.');
+         }
+
         //$this->authorize('edit-article', $article);
+
         // if(auth()->user()->can('edit-article', $article))//cannot
         // {
         //     return 'You can see this.';
         // }
-        if(auth()->user()->cannot('edit', $article))
-        {
-            return redirect('article');
-        }
+        // if(auth()->user()->cannot('edit', $article))
+        // {
+        //     return redirect('article');
+        // }
+
         //$article = Article::findOrFail($id);
         $tags = \App\Tag::lists('name', 'id');
         return view('articles.edit', compact('article', 'tags'));
@@ -127,6 +141,7 @@ class ArticleController extends Controller
         {
             return redirect('article');
         }
+
         //$article = Article::findOrFail($id);
         $article->update($request->all());
         //$article->tags()->sync($request->input('tag_list'));
@@ -141,7 +156,7 @@ class ArticleController extends Controller
      */
     public function destroy(Article $article)
     {
-        if(auth()->user()->cannot('edit', $article))
+        if(auth()->user()->cannot('edit', $article))//?
         {
             return redirect('article');
         }

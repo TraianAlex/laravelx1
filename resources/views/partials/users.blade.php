@@ -3,5 +3,5 @@
 @inject('user', 'App\User')
 	
 @foreach($user->testInjector() as $user)
-	{{ $user->name }}
+	{{ $user->name }}<br>
 @endforeach

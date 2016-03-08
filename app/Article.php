@@ -26,7 +26,7 @@ class Article extends Model
     {
     	$query->where('published_at', '>=', Carbon::now());
     }
-    /**
+    /** muttator
      * Set the published_at attribute
      * @param $date
      */
@@ -35,15 +35,15 @@ class Article extends Model
     	//$this->attributes['published_at'] = Carbon::createFromFormat('Y-m-d', $date);
     	$this->attributes['published_at'] = Carbon::parse($date);
     }
-    /**
-     * Get the published_at attribute
+    /** accessor
+     * Get the published_at attribute //for model binding
      * @param  $date
      * @return string
      */
     public function getPublishedAtAttribute($date)
     {
         //return new Carbon($date);//and format in published_at form field
-        return Carbon::parse($date)->format('Y-m-d');
+        return Carbon::parse($date)->format('Y-m-d');//format here instead of form
     }
     /*
     * An article is owned by a user
@@ -68,6 +68,6 @@ class Article extends Model
      */
     public function getTagListAttribute()
     {
-        return $this->tags->lists('id')->all();
+        return $this->tags->lists('id')->all();//->all() resolved the problem in form
     }
 }
